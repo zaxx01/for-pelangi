@@ -86,15 +86,15 @@ updateTimer();
 
 const reasons = [
 
-"Aku suka caramu tersenyum",
+"Aku suka senyuman kamu",
 
-"Aku suka caramu peduli",
+"Aku suka kepedulian kamu",
 
-"Aku nyaman saat berbicara denganmu",
+"Aku nyaman kalo ngobrol sama kamu",
 
-"Aku suka mendengar ceritamu",
+"Aku suka denger cerita kamu",
 
-"Aku suka tawamu",
+"Aku suka ketawamu",
 
 "Aku suka semangatmu",
 
@@ -132,7 +132,7 @@ spread:180
 
 document.getElementById("surpriseMessage")
 .innerHTML =
-"❤️ Aku bersyukur dipertemukan denganmu, Pelangi ❤️";
+"❤️ AKUU SENENG BANGET KAMU MASIH SAYANG SAMA AKU HEHE I LOVE YOUU!! ❤️";
 
 });
 

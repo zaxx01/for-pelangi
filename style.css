@@ -395,3 +395,71 @@ footer {
         text-shadow: 0 0 20px rgba(255, 221, 181, 0.8);
     }
 }
+
+.birthday-text{
+    margin-top:25px;
+    font-size:1.15rem;
+    line-height:1.8;
+    color:#ffddb5;
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* =========================
+   BIRTHDAY SECTION
+========================= */
+
+.birthday-text{
+    margin-top:25px;
+    font-size:1.15rem;
+    line-height:1.8;
+    color:#ffddb5;
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.birthday-text b{
+    color:#ffd699;
+}
+
+.countdown{
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+}
+
+.countdown::before{
+    content:"🎂";
+    position:absolute;
+    top:20px;
+    right:30px;
+    font-size:70px;
+    opacity:.15;
+}
+
+.countdown h2{
+    margin-bottom:25px;
+}
+
+#timer{
+    margin-top:10px;
+    margin-bottom:20px;
+    font-size:3rem;
+    font-weight:700;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    #timer{
+        font-size:2rem;
+    }
+
+    .birthday-text{
+        font-size:1rem;
+    }
+
+}

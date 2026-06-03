@@ -1,5 +1,35 @@
 const music = document.getElementById("music");
 
+const musicBtn = document.getElementById("musicBtn");
+const musicIcon = document.querySelector(".music-icon");
+
+let isPlaying = false;
+
+musicBtn.addEventListener("click", () => {
+
+    if(!isPlaying){
+
+        music.play();
+
+        musicBtn.innerHTML = "⏸ Pause Lagu";
+
+        musicIcon.classList.add("rotate");
+
+        isPlaying = true;
+
+    }else{
+
+        music.pause();
+
+        musicBtn.innerHTML = "▶ Putar Lagu";
+
+        musicIcon.classList.remove("rotate");
+
+        isPlaying = false;
+    }
+
+});
+
 document.getElementById("openBtn").addEventListener("click", () => {
 
    music.play()

@@ -136,4 +136,85 @@ footer{
     to{
         transform:translateY(110vh);
     }
+    .music-section{
+    padding-top:40px;
+}
+
+.music-card{
+
+    width:350px;
+    max-width:90%;
+
+    margin:auto;
+
+    text-align:center;
+
+    background:rgba(255,255,255,0.08);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    backdrop-filter:blur(12px);
+
+    padding:30px;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.3);
+}
+
+.music-icon{
+
+    font-size:80px;
+
+    margin-bottom:20px;
+}
+
+.music-card p{
+
+    margin-top:10px;
+    margin-bottom:20px;
+}
+
+#musicBtn{
+
+    background:
+    linear-gradient(
+    135deg,
+    #8b5e3c,
+    #5c3b28
+    );
+
+    color:white;
+
+    border:none;
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+#musicBtn:hover{
+
+    transform:scale(1.08);
+}
+
+.rotate{
+
+    animation:spin 4s linear infinite;
+}
+
+@keyframes spin{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
 }

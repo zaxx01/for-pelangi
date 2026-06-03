@@ -55,23 +55,30 @@ document.getElementById("openBtn").addEventListener("click", () => {
 
 const birthDate = new Date("2007-06-04");
 
-function updateAge() {
+function updateAge(){
 
     const now = new Date();
 
-    let age = now.getFullYear() - birthDate.getFullYear();
+    let age =
+    now.getFullYear() -
+    birthDate.getFullYear();
 
-    const monthDiff = now.getMonth() - birthDate.getMonth();
+    const monthDiff =
+    now.getMonth() -
+    birthDate.getMonth();
 
-    if (
+    if(
         monthDiff < 0 ||
-        (monthDiff === 0 && now.getDate() < birthDate.getDate())
-    ) {
+        (
+            monthDiff === 0 &&
+            now.getDate() < birthDate.getDate()
+        )
+    ){
         age--;
     }
 
     document.getElementById("timer").innerHTML =
-        `🎂 Hari ini kamu berusia <b>${age} Tahun</b> ❤️`;
+    `🎉 Selamat Ulang Tahun Ke-${age} ❤️`;
 }
 
 updateAge();

@@ -50,33 +50,31 @@ document.getElementById("openBtn").addEventListener("click", () => {
 
 
 // ===================
-// COUNTDOWN HUBUNGAN
+// USIA PELANGI
 // ===================
 
-const startDate = new Date("2025-01-01");
+const birthDate = new Date("2007-06-04");
 
-function updateTimer(){
+function updateAge() {
 
     const now = new Date();
 
-    const diff = now - startDate;
+    let age = now.getFullYear() - birthDate.getFullYear();
 
-    const days =
-    Math.floor(diff / (1000*60*60*24));
+    const monthDiff = now.getMonth() - birthDate.getMonth();
 
-    const hours =
-    Math.floor(diff/(1000*60*60)%24);
+    if (
+        monthDiff < 0 ||
+        (monthDiff === 0 && now.getDate() < birthDate.getDate())
+    ) {
+        age--;
+    }
 
-    const minutes =
-    Math.floor(diff/(1000*60)%60);
-
-    document.getElementById("timer").innerHTML=
-    `${days} Hari ${hours} Jam ${minutes} Menit`;
+    document.getElementById("timer").innerHTML =
+        `🎂 Hari ini kamu berusia <b>${age} Tahun</b> ❤️`;
 }
 
-setInterval(updateTimer,1000);
-
-updateTimer();
+updateAge();
 
 
 

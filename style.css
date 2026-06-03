@@ -42,7 +42,7 @@ body::before {
     align-items: center;
     text-align: center;
     background: linear-gradient(135deg, rgba(45, 27, 20, 0.85), rgba(61, 35, 24, 0.85)),
-                url("https://id.postermywall.com/index.php/posterbuilder/copy/38837ae824e497e9e2e6af6824d0e369");
+                url("images/happybirthday.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

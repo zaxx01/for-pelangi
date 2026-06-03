@@ -2,7 +2,13 @@ const music = document.getElementById("music");
 
 document.getElementById("openBtn").addEventListener("click", () => {
 
-    music.play();
+   music.play()
+.then(() => {
+    console.log("Music playing");
+})
+.catch(err => {
+    console.log(err);
+});
 
     document.querySelector(".letter")
     .scrollIntoView({
